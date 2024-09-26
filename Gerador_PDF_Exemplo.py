@@ -88,60 +88,8 @@ if __name__ == "__main__":
     # URLs do site que você deseja converter para PDF
     urls = [
         # Substitua pelo URL do site
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/in%C3%ADcio",  # Substitua pelo URL do site
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/facti",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/qualifacti",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/coordena%C3%A7%C3%A3o-geral",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/adriana-pereira-da-silva",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/ana-paula-rodrigues",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/fabr%C3%ADcio-kleinicke-gomes",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/francisco-conti-bauke",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/j%C3%BAlio-c%C3%A9sar-leit%C3%A3o-j%C3%BAnior",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/larissa-de-oliveira-figueira",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/marcelo-de-almeida-viana",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/peterson-gomes-de-moura-barros",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/mediadores/thais-angela-cavalheiro-de-azevedo",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/introdu%C3%A7%C3%A3o",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-inspirar",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/a-computa%C3%A7%C3%A3o-em-nuvem",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-e-mbaas",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-com-o-firebase",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-com-o-firebase/baas-na-pr%C3%A1tica-via-projetos-firebase",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-com-o-firebase/adicionando-o-firebase-a-projetos-de-apps-j%C3%A1-existentes",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-com-o-firebase/configurando-os-servi%C3%A7os-principais-do-firebase",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/baas-com-o-firebase/projeto-de-demonstra%C3%A7%C3%A3o-do-firebase-para-apps-android-e-ios",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-conceitualizar/estudo-de-casos-pr%C3%A1ticos",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-consolidar",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/etapa-avaliar",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-1",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-2",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-3",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-4",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-5",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-6",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-7",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-8",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-9",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-10",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-11",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-12",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-13",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-14",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-15",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-16",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-17",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-18",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-19",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-20",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/sugest%C3%B5es-de-resposta/atividade-de-experimenta%C3%A7%C3%A3o-21",
-        "https://sites.google.com/facti.com.br/aplicacoes-escalaveis-na-nuvem/material-did%C3%A1tico/refer%C3%AAncias",
-
-
-        # Adicione outras URLs conforme necessário
+        "https://...",  # Substitua pelo URL da página desejada do site
+        # Adicione URLs conforme necessário
     ]
 
     # Diretório temporário para salvar PDFs intermediários
